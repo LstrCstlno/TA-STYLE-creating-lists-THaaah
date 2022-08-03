@@ -1,0 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my styles */
+
+/* general  */
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    font-family: roboto, sans;
+    box-sizing: border-box;
+}
+
+ol, ul{
+    list-style-position:outside;
+    color: #D4CEA7;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.7;
+    text-transform: capitalize;
+}
+
+/* header */
+
+.nav-head, .nav-foot{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-head li, .nav-foot li{
+    margin-right: 40px;
+    list-style-type: none;
+}
+
+.nav-head a, .nav-foot a{
+    font-size: 21px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+.head{
+    background-color: #F96115;
+}
+
+
+/* main */
+
+
+main{
+    background-color: #D4CEA7;
+    background-attachment: fixed;
+}
+
+.list-boxes{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.box{
+    flex: 0 1 31%;
+    background-color: #005979;
+    box-shadow: 3px  3px 20px ;
+    height: 520px;
+}
+
+.box1 ol, .parent {
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.parent ol, .parent ul{
+    padding-left: 45px;
+}
+
+.box3 li{
+    list-style-image:url(/TA-STYLE-creating-lists-THaaah/block-BHaaby/pngegg.png);
+    padding-left: 10px;
+}
+
+.box3{
+    padding-left: 70px;
+    line-height: 2;
+}
+
+dl,dt,dd{
+    font-family: font-family: 'Roboto Mono', monospace;
+}
+
+dt{
+    color: #262C22;
+    text-transform: capitalize;
+    font-size: 32px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+dd{
+    color: #686451;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.description{
+    padding-bottom: 40px;
+}
+
+/* footer */
+.nav-foot a{
+    color: #eae6cc;
+}
+
+footer{
+    background-color: #262C22;
+}
+
+.foot{
+    padding: 40px 0;
+}
